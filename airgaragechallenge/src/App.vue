@@ -2,7 +2,7 @@
   <div id="app">
     <div class="search-header-and-input">
       <h2>Search Parking from Lowest to Highest</h2>
-      <div class="search-input-and-button">
+      <div>
         <input @input="getLocationInput" />
         <button @click="getYelpLocation">Search</button>
       </div>
@@ -63,7 +63,6 @@ export default {
   },
   methods: {
     getLocationInput(event) {
-      console.log("event", event.target.value);
       this.location = event.target.value;
     },
     getYelpLocation() {
@@ -82,7 +81,6 @@ export default {
         )
         .then((res) => {
           this.searchedParkingBusinesses = res.data.businesses;
-          console.log("res", res);
         })
         .catch((err) => {
           console.log("err", err);
@@ -100,9 +98,6 @@ export default {
   align-items: center;
   flex-direction: column;
   text-align: center;
-}
-
-.search-input-and-button {
 }
 
 .parking-business-card {
