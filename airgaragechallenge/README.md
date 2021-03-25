@@ -1,6 +1,8 @@
 # airgaragechallenge
 
-## Project setup
+## In order to run this project:
+
+### Project setup
 ```
 npm install
 ```
@@ -10,15 +12,13 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### To be able to search:
 
-### Lints and fixes files
 ```
-npm run lint
+https://cors-anywhere.herokuapp.com/corsdemo
 ```
+and click on "Request temporary access to the demo server" button
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This allows temp access to Yelp Fusion API (preventing CORS block).
+
+Should see this message after clicking: "You currently have temporary access to the demo server."

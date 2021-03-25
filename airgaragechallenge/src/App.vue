@@ -106,6 +106,7 @@ export default {
 }
 
 .parking-business-card {
+  border: 1px solid;
   display: grid;
   grid-template-columns: 1fr auto auto auto;
   grid-gap: 10px;
