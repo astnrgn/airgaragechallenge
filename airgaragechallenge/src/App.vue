@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="search-header-and-input">
-      <p>Search Parking from Lowest to Highest</p>
+      <h2>Search Parking from Lowest to Highest</h2>
       <div class="search-input-and-button">
         <input @input="getLocationInput" />
         <button @click="getYelpLocation">Search</button>
@@ -11,6 +11,7 @@
       <div
         v-for="business in lowestToHighestParkingBusinesses"
         :key="business.id"
+        class="parking-business-card"
       >
         <img
           v-if="business.image_url"
@@ -92,4 +93,23 @@ export default {
 </script>
 
 <style>
+.search-header-and-input {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.search-input-and-button {
+}
+
+.parking-business-card {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  grid-gap: 10px;
+  align-items: center;
+  margin: 120px auto;
+}
 </style>
