@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="search-header-and-input">
-      <h2>Search Parking from Lowest to Highest</h2>
+      <h2>Search Parking from Lowest to Highest By City</h2>
       <div>
         <input @input="getLocationInput" />
         <button @click="getYelpLocation">Search</button>
