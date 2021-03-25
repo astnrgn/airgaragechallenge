@@ -19,7 +19,7 @@ npm run serve
 ### To be able to search:
 
 ```
-https://cors-anywhere.herokuapp.com/corsdemo
+GOTO: https://cors-anywhere.herokuapp.com/corsdemo
 ```
 and click on "Request temporary access to the demo server" button
 
